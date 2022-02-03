@@ -3,7 +3,7 @@
     <div data-testid="countValue">
       {{ count }}
     </div>
-    <button @click="monkeys" data-testid="decrementButton">Decrease</button>
+    <button @click="decrement" data-testid="decrementButton">Decrease</button>
     <button @click="increment" data-testid="incrementButton">Increase</button>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
     increment() {
       this.count++;
     },
-    monkeys() {
+    decrement() {
       this.count--;
     },
   },
